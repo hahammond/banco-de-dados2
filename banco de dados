@@ -10,3 +10,5 @@ CREATE TABLE Compras (
     NomeLivro VARCHAR(100),
     FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
 );
+Selec * from clientes
+https://sqliteonline.com/#sqltext=%23url-sqlite%3Ddb-sqlite%0D%0A%23tab-name%3DSQLite%0D%0Aselect%20*%20from%20Clientes%0A
