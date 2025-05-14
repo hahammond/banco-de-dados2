@@ -11,4 +11,7 @@ CREATE TABLE Compras (
     FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
 );
 Selec * from clientes
-https://sqliteonline.com/#sqltext=%23url-sqlite%3Ddb-sqlite%0D%0A%23tab-name%3DSQLite%0D%0Aselect%20*%20from%20Clientes%0A
+
+SELECT Clientes.nomeCliente, Compras.NomeLivro
+FROM Clientes
+INNER JOIN Compras ON Clientes.ID = Compras.ClienteID;
